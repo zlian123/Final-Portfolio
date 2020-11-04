@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='css/html5reset.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='shortcut icon' type='image/png' href='images/logo_icon.png'/> <!--http://www.clker.com/clipart-longboarding.html-->
+    <title>Longboarding</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class='nav_bar'>
+                    <li><a href='index.html'>
+                        <img src='images/logo_icon.png' alt='logo' id='nav_logo'/>
+                        Longboarding</a></li>
+                    <li><a href='dance.html'>Dance</a></li>
+                    <li><a class='current' href='freestyle.html'>Freestyle</a></li>
+                    <li><a href='media.html'>Media</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <button class='open-btn' onclick='openForm()'>REACH OUT</button>
+                <div class='form_popup' id = 'popup_form'>
+                    <form action ='https://formspree.io/f/xjvprprk' class='form_container' method = 'POST'>
+                    <fieldset>
+                        <legend>Message</legend>
+                        <label for="name">Your Name</label>
+                        <input type="text" placeholder="Enter Your Name" id = "name" name = "Name" required>
+
+                        <label for="email">Your Email</label>
+                        <input type="email" placeholder="Enter Your Email" id = "email" name = "Email" required>
+
+                        <label for="phone">Phone Number (ex: 123-456-7890)</label>
+                        <input type="tel" id = "phone" name = "tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+                        <label for="message">Message</label>
+                        <textarea id = "message" name = "Message" placeholder="Enter your message" required></textarea>
+
+                        <input type="submit"  class='btn_send' value="Send the message">
+                        <button type='submit' class='btn_cancel' onclick='closeForm()'>Close</button>
+                    </fieldset>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class = 'social_media'>
+                <ul>
+                    <li> <!--Twitter share -->
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out this awesome site about longboarding" data-url="https://zlian123.github.io/Final-Portfolio" data-hashtags="longboarding" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </li>
+                    <li> <!--Facebook share -->
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="elvCgFnd"></script>
+                        <div class="fb-share-button" data-href="https://zlian123.github.io/Final-Portfolio" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                    </li>
+                    <li>
+                        <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+                        <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+                    </li>
+                </ul>
+            </div>
+            <p>Unveristy of Michigan School of Information <br/>
+                &copy; Zhen Lian - Web Design 2020</p>
+            <!-- Social Media buttons -->
+        </footer>
+    </body>
+</html>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

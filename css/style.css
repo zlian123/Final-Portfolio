@@ -1,0 +1,191 @@
+html{
+    font-family: helvetica, arial, sans-serif;
+}
+
+body{
+    font-size: 16px;
+}
+
+.nav_bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #292929;
+}
+
+.nav_bar img{
+    height: 1.4rem;
+    width: auto;
+}
+
+.nav_bar a{
+    display: flex;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #c8c8c8;
+    transition: 0.2s ease color;
+}
+
+.nav_bar a:hover, a:focus{
+    color:palevioletred;
+}
+
+.nav_bar .current {
+    color:#00e2ff;
+}
+
+#longboard_video {
+    width: 100%;
+    height: auto;
+}
+
+#pause_video{
+    position: absolute;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid rgb(255, 255, 255, 0.5);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight:300;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s;
+    background-color: rgba(82, 82, 82, 0.3);
+    }
+div.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pause_video:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.open-btn{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+.form_popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form_container{
+    max-width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.form_container legend {
+    /* space bettwen legend and Your Name */
+}
+
+.form_container input[type=text], .form_container input[type=email], .form_container input[type=tel], .form_container textarea{
+    min-width: 17rem;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+.form_container textarea {
+    max-width: 17rem;
+    min-height: 4rem;
+    max-height: 27rem;
+}
+
+.btn_send{
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.btn_cancel {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #838383;
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+
+.social_media ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* Tablet View */
+@media screen and (min-width: 600px){
+    .nav_bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav_bar a{
+        font-size: 1.8rem;
+    }
+
+    .nav_bar img{
+        height: 1.6rem;
+        width: auto;
+    }
+
+    .social_media ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1000px){
+    .nav_bar a{
+        font-size: 2.25rem;
+    }
+
+    .nav_bar img{
+        height: 2rem;
+        width: auto;
+    }
+
+    #pause_video {
+        font-size: 2rem;
+    }
+}
+
