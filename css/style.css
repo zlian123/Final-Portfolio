@@ -50,7 +50,7 @@ p {
     transition: 0.2s ease color;
 }
 
-.nav_bar a:hover, a:focus{
+.nav_bar a:hover, .nav_bar a:focus{
     color:#d87093;
 }
 
@@ -205,7 +205,7 @@ div.overlay {
     flex-direction: column;
 }
 
-.freeride_content p, h2, h3{
+.freeride_content p, .freeride_content h2, .freeride_content h3{
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -230,7 +230,9 @@ div#image_gallery {
     grid-template-rows: repeat(1, 1fr);
 }
 
-#image_gallery .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11 {
+#image_gallery .image1, #image_gallery .image2, #image_gallery .image3, #image_gallery .image4, 
+#image_gallery .image5, #image_gallery .image6, #image_gallery .image7, #image_gallery .image8, 
+#image_gallery .image9, #image_gallery .image10, #image_gallery .image11 {
     overflow: hidden;
 }
 
@@ -435,7 +437,7 @@ footer {
 
     /* desktop index page */
     .index_content {
-        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-columns: 2fr 2fr 1fr 1fr;
     }
 
     .index_content h1 {
@@ -444,6 +446,7 @@ footer {
 
     .index_content h2 {
         grid-column: 1 / span 3;
+        grid-row: 4 / span 1;
     }
 
     .index_content p:first-of-type {
@@ -459,28 +462,28 @@ footer {
 
     #longboard{
         margin: 1.5rem;
-        grid-column: 3 / span 1;
+        grid-column: 3 / span 2;
         grid-row: 2 / span 1;
         align-self: center;
     }
 
     #skateboard {
         margin: 1.5rem;
-        grid-column: 3 / span 1;
+        grid-column: 3 / span 2;
         grid-row: 3 / span 1;
         align-self: center;
     }
         
     #surfing {
         margin: 1.5rem;
-        grid-column: 3 / span 1;
+        grid-column: 3 / span 2;
         grid-row: 5 / span 1;
         align-self: center;
     }
     
     #idownhill {
         margin: 1.5rem;
-        grid-column: 3 / span 1;
+        grid-column: 3 / span 2;
         grid-row: 6 / span 1;
         align-self: center;
     }
