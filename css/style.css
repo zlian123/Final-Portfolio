@@ -334,8 +334,7 @@ div#image_gallery img {
 footer {
     background-color: #838383;
 	text-align: center;
-	margin: 10px 0;
-    padding: 10px 0;
+    padding-bottom: 10px;
 }
 
 .social_media ul{
@@ -348,6 +347,10 @@ footer {
 .social_media li{
     display: flex;
     align-self:center;
+}
+
+.social_media li:first-of-type {
+    margin-top: 1rem;
 }
 
 /* Tablet View */
@@ -384,6 +387,10 @@ footer {
 
     .social_media ul{
         flex-direction: row;
+    }
+
+    .social_media li{
+        margin-top: 1rem;
     }
 
     /* tablet freeride page */
