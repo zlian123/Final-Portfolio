@@ -335,7 +335,7 @@ footer {
     background-color: #838383;
 	text-align: center;
 	margin: 10px 0;
-	padding: 10px 0;
+    padding: 10px 0;
 }
 
 .social_media ul{
@@ -343,6 +343,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     list-style-type: none;
+}
+
+.social_media li{
+    display: flex;
+    align-self:center;
 }
 
 /* Tablet View */
@@ -378,7 +383,6 @@ footer {
     }
 
     .social_media ul{
-        display: flex;
         flex-direction: row;
     }
 
