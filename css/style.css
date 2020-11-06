@@ -13,6 +13,10 @@ h1, h2{
     margin: 1.2rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 p {
     margin: 1.2rem;
     font-size: 1.2rem;
@@ -168,6 +172,56 @@ div.overlay {
 }
 
 
+/* freeride page */
+.parallax h1{
+    color:rgb(255, 255, 255);
+    letter-spacing: 0.1em;
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0)   0%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/downhill.jpg'); /*Royalty Free from Unsplash*/
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+.freeride_content{
+    background-color: #181818;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.freeride_content p, h2, h3{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.freeride_content iframe {
+    width: 100%;
+    height: 30em;
+}
+
+.freeride_content img {
+    height: 100%;
+    width: 90%;
+    margin: 2rem;
+}
+
 
 div#image_gallery {
     display: grid;
@@ -203,43 +257,7 @@ div#image_gallery img {
     height: 100%;
 }
 
-/* freeride page */
-.parallax h1{
-    color:rgb(255, 255, 255);
-    letter-spacing: 0.1em;
-    background-color: rgba(0, 0, 0, 0.644);
-    width: 20rem;
-}
-
-.parallax {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0)   0%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/downhill.jpg'); /*Royalty Free from Unsplash*/
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    letter-spacing: 0.3em;
-    text-align: center;
-}
-
-.freeride_content p {
-    color: #ffffff;
-    background-color: #181818;
-    margin:0;
-    height: 100vh;
-    background-attachment: scroll;
-    background-size: cover;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* #d87093 */
 /* Form */
 .open-btn{
     background-color: #555;
@@ -335,6 +353,10 @@ footer {
         font-size:2.3rem;
     }
 
+    h3 {
+        font-size: 1.7rem;
+    }
+
     p {
         font-size: 1.4rem;
     }
@@ -363,6 +385,10 @@ footer {
         width: auto;
     }
 
+    .freeride_content iframe {
+        height: 40em;
+    }
+
     /* tablet media page */
     div#image_gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -384,6 +410,10 @@ footer {
 @media screen and (min-width: 1000px){
     h1, h2{
         font-size:3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 
     p {
@@ -453,6 +483,76 @@ footer {
         grid-column: 3 / span 1;
         grid-row: 6 / span 1;
         align-self: center;
+    }
+
+    /* desktop freeride page */
+
+    .freeride_content #yt_vid {
+        max-width: 50em;
+        max-height: 100%;
+    }
+
+    .freeride_content p {
+        max-width: 35em;
+        max-height: 100%;
+        align-items: center;
+    }
+
+    .img_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .img_container #fr_image1 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        width: 100%;
+        height: 90%;
+    }
+
+    .img_container #fr_image2 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        width: 100%;
+        height: 90%;
+    }
+
+    .img_container #fr_image3 {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+        width: 100%;
+        height: 90%;
+    }
+
+    .img_container h3:nth-of-type(1){
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    .img_container p:nth-of-type(1) {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    .img_container h3:nth-of-type(2){
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    .img_container p:nth-of-type(2) {
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    .img_container h3:nth-of-type(3){
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+    .img_container p:nth-of-type(3) {
+        grid-row: 3 / span 1;
+        grid-column: 3 / span 1;
     }
 
     /* desktop media page */
