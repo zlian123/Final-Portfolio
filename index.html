@@ -5,7 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='stylesheet' type='text/css' href='css/html5reset.css'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <link rel='shortcut icon' type='image/png' href='images/logo_icon.png'/> <!--http://www.clker.com/clipart-longboarding.html-->
+    <link rel='shortcut icon' type='image/png' href='images/logo_icon.png'/> <!--http://www.clker.com/clipart-longboarding.html--><!--By Jon Schnabl 2011-->
     <title>Longboarding</title>
     </head>
     <body>
@@ -13,25 +13,49 @@
             <nav>
                 <ul class='nav_bar'>
                     <li><a class='current' href='index.html'>
-                        <img src='images/logo_icon.png' alt='logo' id='nav_logo'/>
+                        <img src='images/logo_icon.png' alt='logo' id='nav_logo'/> <!--http://www.clker.com/clipart-longboarding.html--><!--By Jon Schnabl 2011-->
                         Longboarding</a></li>
-                    <li><a href='dance.html'>Dance</a></li>
-                    <li><a href='freestyle.html'>Freestyle</a></li>
-                    <li><a href='media.html'>Media</a></li>
+                        <li><a href='freeride.html'>Freeride</a></li>
+                        <li><a href='freestyle.html'>Freestyle/DC</a></li>
+                        <li><a href='media.html'>Media</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class='overlay'>
-                <video autoplay muted loop id='longboard_video'>
+                <video autoplay muted loop id='longboard_video'> <!--Royalty free video-->
                     <source src='videos/longboard_video.mp4' type='video/mp4'>
                     Your browser does not support HTML5 video.
                 </video>
                 <button id='pause_video' onclick='pauseVideo()'>Pause</button>
                 <script src='javascript.js'></script>
             </div>
-            <div class='main_content'>
-                <h1></h1>
+            <div class='index_content'>
+                <h1>What is Longboarding?</h1>
+                    <p>Many people are familiar with skateboarding, but may not be so familiar with longboarding. 
+                    Longboarding is a sport that is similar skateboarding but with some differences in the shape, 
+                    speed, price, and what you can do with them. Longboards can come in a wide variety of shapes 
+                    and sizes. Typically, longboards are 38-52 inches long compared to skateboards which are 
+                    usually 28 to 34 inches. They are also faster than skateboards because it has larger and softer 
+                    wheels which also adds stability. This also makes it pricier because the parts(bearings, and 
+                    truck pieces) are much more important in longboards. Longboards are the best for freeriding, 
+                    dancing, and freestyles while skateboards excels in flip trcks and transition skating.</p>
+                    <!-- Royalty free -->
+                    <img src='images/longboard.jpg' alt='longboard' id='longboard'>
+                    <img src='images/skateboard.jpg' alt='skateboard' id='skateboard'>
+                <h2>History of Longboards</h2>
+                <!--http://www.snowboardjones.com/a-brief-history-of-longboards-and-longboarding/-->
+                    <p>Longboards originated in Hawaii in the 1950s when surfers began customizing their
+                    skateboards giving them longer desk and larger wheels to mimic the rolling motion
+                    of waves and balance required by surfing. They first gained popularity in California
+                    in the 1970s then soon died off due to the threat of lawsuits and high insurance costs.
+                    Longboards were brought back in the 1990s after the invention of reverse kingpin trucks 
+                    which made longboards easier to carve and turn. This invention led to an explosion of
+                    broader longboarding styles such as freeriding, freestyles and dancing. Theexplosion 
+                    of these new longboarding styles soon evolved to become a serious sport.</p>
+                    <!-- Royalty free -->
+                    <img src='images/surfing.jpg' alt='surfing' id='surfing'>
+                    <img src='images/idownhill.jpg' alt='downhill riding' id='idownhill'>
             </div>
             <div>
                 <button class='open-btn' onclick='openForm()'>REACH OUT</button>
@@ -59,7 +83,7 @@
             </div>
         </main>
         <footer>
-            <div class = 'social_media'>
+            <div class='social_media'>
                 <ul>
                     <li> <!--Twitter share -->
                         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out this awesome site about longboarding" data-url="https://zlian123.github.io/Final-Portfolio" data-hashtags="longboarding" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -77,7 +101,6 @@
             </div>
             <p>Unveristy of Michigan School of Information <br/>
                 &copy; Zhen Lian - Web Design 2020</p>
-            <!-- Social Media buttons -->
         </footer>
     </body>
 </html>
