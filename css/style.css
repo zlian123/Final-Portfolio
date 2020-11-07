@@ -249,16 +249,16 @@ div.overlay {
     grid-template-columns: 1.5fr 1fr 1.5fr;
 }
 
-.video_gallery label:first-of-type {
-    grid-column: 3 / span 1;
+.video1 {
+    grid-column: 1 / span 1;
 }
 
-.video_gallery label:nth-last-of-type(2) {
+.video2 {
     grid-column: 2 / span 1;
 }
 
-.video_gallery label:nth-last-of-type(3) {
-    grid-column: 1 / span 1;
+.video3 {
+    grid-column: 3 / span 1;
 }
 
 .video_gallery .video {
@@ -275,7 +275,7 @@ div.overlay {
 }
 
 .video_gallery label {
-    color: #000000;
+    color: #d87093;
     font-size: 1.5rem;
     font-weight: 400;
     border-bottom: 1px outset #CCCCCC;
@@ -513,6 +513,13 @@ footer {
     .freeride_content iframe {
         height: 40em;
     }
+    
+    /* tablet freestyle page */
+    .video_gallery label {
+        font-size: 1.8rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
 
     /* tablet media page */
     div#image_gallery {
@@ -528,11 +535,6 @@ footer {
     #image_gallery .image6 {
         grid-column:  2 / span 1;
         grid-row: 6 / span 1;
-    }
-
-    /* tablet freestyle page */
-    .video_gallery label {
-        font-size: 1.8rem;
     }
 }
 
@@ -685,6 +687,7 @@ footer {
         grid-column: 3 / span 1;
     }
 
+    /* desktop freestyle page */
     .dc_content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -701,7 +704,6 @@ footer {
         grid-row: 2 / span 1;
     }
 
-    /* desktop freestyle page */
     .dc_content p:nth-of-type(2) {
         grid-column: 2 / span 1;
         grid-row: 2 / span 1;
@@ -713,9 +715,6 @@ footer {
         text-align: center;
         align-items: center;
     }
-    .video blockquote, .video iframe {
-        /* width: 80% !important; */
-    }
 
     .video_gallery label {
         width: 20%;
@@ -723,6 +722,7 @@ footer {
 
     .video1, .video2, .video3 {
         width:90%!important;
+        padding:5px;
     }
 
     /* desktop media page */
@@ -827,4 +827,8 @@ footer {
     main .parallax {
       background-attachment: initial;
     }
+
+    .video_gallery .video{
+        animation-duration: 0ms !important;
+      }
   }
