@@ -16,7 +16,7 @@ h1, h2{
 h3 {
     font-size: 1.5rem;
 }
-/* fix paragraph tabs */
+
 p {
     margin: 1.2rem;
     font-size: 1.2rem;
@@ -56,6 +56,22 @@ p {
 
 .nav_bar .current {
     color:#00e2ff;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    border: 2px solid;
+}
+
+.skip a:focus{
+    top: 0px;
 }
 
 /* index page */
@@ -247,6 +263,7 @@ div.overlay {
     display: grid;
     justify-items: start;
     grid-template-columns: 1.5fr 1fr 1.5fr;
+    overflow: hidden;
 }
 
 .video1 {
@@ -285,7 +302,7 @@ div.overlay {
 }
 
 .video_gallery input[type='radio']:checked+label {
-    /* color: #e41f35; */
+    color: #247bc2;
 }
 
 .video_gallery input[type='radio']:checked+label:before {
@@ -333,6 +350,8 @@ div.overlay {
       width: 100%;
     }
   }
+  /* fix comments instagram */
+  /* fix dc page indexing on labels */
 
 /* fix last photo */
 /* media page */
@@ -720,7 +739,7 @@ footer {
         width: 20%;
     }
 
-    .video1, .video2, .video3 {
+    .video2, .video3 {
         width:90%!important;
         padding:5px;
     }
@@ -814,21 +833,21 @@ footer {
 }
 
 @media screen and (prefers-reduced-motion: reduce){
-    main .freeride_content{
+    main .freeride_content {
         scroll-behavior: auto; /* Removes scroll animation */
     }
   
-    /* .skip a{
-      -webkit-transition: none;
-      transition: none;        
-     } */
+    .skip a {
+        -webkit-transition: none;
+        transition: none;        
+    }
   
     /*Turn off parallax*/
     main .parallax {
       background-attachment: initial;
     }
 
-    .video_gallery .video{
+    .video_gallery .video {
         animation-duration: 0ms !important;
       }
   }
