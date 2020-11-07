@@ -841,6 +841,21 @@ footer {
         -webkit-transition: none;
         transition: none;        
     }
+
+    .nav_bar a {
+        -webkit-transition: none;
+        transition: none;    
+    }
+
+    #pause_video {
+        -webkit-transition: none;
+        transition: none; 
+    }
+
+    div#image_gallery img:hover {
+        -webkit-transition: none;
+        transition: none;    
+    }
   
     /*Turn off parallax*/
     main .parallax {
