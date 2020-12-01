@@ -144,7 +144,7 @@ div.overlay {
     margin: 0;
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
-    border: 10px solid;
+    border: 6px solid;
     border-image: linear-gradient(to bottom, #247bc2, #d87093 20%, rgba(0,0,0,0)) 1;
     padding: 0 0 30px;
     background-clip: content-box;
@@ -156,7 +156,7 @@ div.overlay {
     margin: 0;
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
-    border: 10px solid;
+    border: 6px solid;
     border-image: linear-gradient(to bottom, #247bc2, #d87093 20%, rgba(0,0,0,0)) 1;
     padding: 0 0 30px;
     background-clip: content-box;
@@ -169,7 +169,7 @@ div.overlay {
     grid-column: 1 / span 1;
     grid-row: 6 / span 1;
     /* fix surfing img size */
-    border: 10px solid;
+    border: 6px solid;
     border-image: linear-gradient(to bottom, #247bc2, #d87093 20%, rgba(0,0,0,0)) 1;
     padding: 0 0 30px;
     background-clip: content-box;
@@ -181,7 +181,7 @@ div.overlay {
     margin: 0;
     grid-column: 2 / span 1;
     grid-row: 6 / span 1;
-    border: 10px solid;
+    border: 6px solid;
     border-image: linear-gradient(to bottom, #247bc2, #d87093 20%, rgba(0,0,0,0)) 1;
     padding: 0 0 30px;
     background-clip: content-box;
