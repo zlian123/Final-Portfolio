@@ -394,6 +394,10 @@ div.overlay {
     content: '🛹';
 }
 
+.video_gallery input :hover {
+    color: red;
+}
+
 #video1:checked ~ .video1, #video2:checked ~ .video2, #video3:checked ~ .video3{ /* sibling*/
     animation: 1200ms fadeIn ease;
     animation-fill-mode: both;
@@ -937,6 +941,10 @@ footer {
     .nav_bar a {
         -webkit-transition: none;
         transition: none;    
+    }
+
+    .nav_bar img {
+        animation-duration: 0ms !important;
     }
 
     #pause_video {
