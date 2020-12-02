@@ -23,7 +23,7 @@
             <nav>
                 <ul class='nav_bar'>    
                     <li><a class='current' href='index.html'>
-                        <img src='images/logo_icon.png' alt='logo' id='nav_logo'/> <!--http://www.clker.com/clipart-longboarding.html--><!--By Jon Schnabl 2011-->
+                        <img src='images/logo_icon.png' alt='skateboard logo' id='nav_logo'/> <!--http://www.clker.com/clipart-longboarding.html--><!--By Jon Schnabl 2011-->
                         Longboarding</a></li>
                         <li><a href='freeride.html'>Freeride</a></li>
                         <li><a href='freestyle.html'>Freestyle/DC</a></li>
@@ -31,7 +31,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class='main_index'>
             <div class='overlay'>
                 <video autoplay muted loop id='longboard_video'> <!--Royalty free video-->
                     <source src='videos/longboard_video.mp4' type='video/mp4'>
@@ -66,6 +66,53 @@
                     <!-- Royalty free -->
                     <img src='images/surfing.jpg' alt='surfing' id='surfing'>
                     <img src='images/idownhill.jpg' alt='downhill riding' id='idownhill'>
+            </div>
+            <div class='flip_card_section'>
+                <h2>Longboards</h2>
+                <p id='flip_hint'>(Hover over the images below)</p>
+                <p style='margin: 0;'>Image Source: https://www.actionboardshop.com/longboard-buyers-guide</p>
+                <div class='flip_card_flexbox'>
+                <div class='flip_card'>
+                    <div class='flip_card_inner'>
+                        <div class='flip_card_front'>
+                            <img tabindex='0' class='flip_card_images' src='images/drop_through_longboard.jpg' alt='Drop Through Longboard'>
+                        </div>
+                        <div class='flip_card_back'>
+                            <h3>Drop Through Longboard</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class='flip_card'>
+                    <div class='flip_card_inner'>
+                        <div class='flip_card_front'>
+                            <img tabindex='0' class='flip_card_images' src='images/topmount_longboard.png' alt='Topmount Longboard'>
+                        </div>
+                        <div class='flip_card_back'>
+                            <h3>Topmount Longboard</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class='flip_card'>
+                    <div class='flip_card_inner'>
+                        <div class='flip_card_front'>
+                            <img tabindex='0' class='flip_card_images' src='images/drop_down_longboard.jpg' alt='Drop Down Longboard'>
+                        </div>
+                        <div class='flip_card_back'>
+                            <h3>Drop Down Longboard</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class='flip_card'>
+                    <div class='flip_card_inner'>
+                        <div class='flip_card_front'>
+                            <img tabindex='0' class='flip_card_images' src='images/dancer_longboard.jpg' alt='Dancer Longboard'>
+                        </div>
+                        <div class='flip_card_back'>
+                            <h3>Dancer Longboard</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
             <div>
                 <button class='open-btn' onclick='openForm()'>REACH OUT</button>
