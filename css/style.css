@@ -235,7 +235,7 @@ div.overlay {
 .freeride_content img {
     height: 100%;
     width: 90%;
-    margin: 2rem;
+    margin: 20px;
 }
 
 /* freestyle page */
@@ -778,7 +778,8 @@ footer {
 
 /* Large screen */
 @media screen and (min-width: 1200px) {
-
+    /* index page */
+    
 }
 
 /* Super large screen */
