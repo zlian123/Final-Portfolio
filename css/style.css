@@ -57,7 +57,7 @@ p {
 }
 
 .nav_bar .current {
-    color:#B8F2E6;
+    color:#FFA69E;
 }
 
 .skip a{
@@ -857,12 +857,6 @@ footer {
         grid-column: 1 / span 1;
         grid-row: 4 / span 1;
     }
-}
-
-/* Large screen */
-@media screen and (min-width: 1200px) {
-    /* index page */
-    
 }
 
 /* Super large screen */
