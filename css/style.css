@@ -40,6 +40,20 @@ p {
 .nav_bar img{
     height: 1.4rem;
     width: auto;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: 0 10px 0 10px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .nav_bar a{
@@ -560,7 +574,7 @@ footer {
 }
 
 /* Tablet View */
-@media screen and (min-width: 680px){
+@media screen and (min-width: 740px){
     body{
         font-size: 20px;
     }
