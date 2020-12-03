@@ -185,7 +185,6 @@ div.overlay {
     margin: 0;
     grid-column: 1 / span 1;
     grid-row: 6 / span 1;
-    /* fix surfing img size */
     border: 6px solid;
     border-image: linear-gradient(to bottom, #AED9E0, #FFA69E 20%, rgba(0,0,0,0)) 1;
     padding: 0 0 30px;
@@ -352,7 +351,7 @@ div.overlay {
     overflow: hidden;
 }
 
-.video1 {
+/* .video1 {
     grid-column: 1 / span 1;
 }
 
@@ -362,7 +361,7 @@ div.overlay {
 
 .video3 {
     grid-column: 3 / span 1;
-}
+} */
 
 .video_gallery .video {
     animation: 1200ms fadeOut ease;
@@ -395,9 +394,9 @@ div.overlay {
     content: '🛹';
 }
 
-.video_gallery input :hover {
+/* .video_gallery input:hover {
     color: red;
-}
+} */
 
 #video1:checked ~ .video1, #video2:checked ~ .video2, #video3:checked ~ .video3{ /* sibling*/
     animation: 1200ms fadeIn ease;
@@ -440,10 +439,7 @@ div.overlay {
       width: 100%;
     }
   }
-  /* fix comments instagram */
-  /* fix dc page indexing on labels */
 
-/* fix last photo */
 /* media page */
 div#image_gallery {
     display: grid;
@@ -485,7 +481,6 @@ div#image_gallery img {
     height: 100%;
 }
 
-/* Fix tags  */
 /* Form */
 .open-btn{
     background-color: #555;
@@ -535,7 +530,7 @@ div#image_gallery img {
 }
 
 .btn_send{
-    background-color: #4CAF50;
+    background-color: #12997e;
     color: #ffffff;
     padding: 16px 20px;
     border: none;
@@ -546,7 +541,7 @@ div#image_gallery img {
 }
 
 .btn_cancel {
-    background-color: #ff0000;
+    background-color: #e24739;
     color: #ffffff;
     padding: 16px 20px;
     border: none;
@@ -933,7 +928,7 @@ footer {
     main .freeride_content {
         scroll-behavior: auto; /* Removes scroll animation */
     }
-  
+
     .skip a {
         -webkit-transition: none;
         transition: none;        

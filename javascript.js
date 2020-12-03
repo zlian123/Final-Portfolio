@@ -19,4 +19,3 @@ function openForm() {
 function closeForm(){
     document.getElementById('popup_form').style.display = 'none';
 }
-
