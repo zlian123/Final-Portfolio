@@ -19,3 +19,26 @@ function openForm() {
 function closeForm(){
     document.getElementById('popup_form').style.display = 'none';
 }
+
+function focusTrap(e) {
+    if (!(e.key ==='Tab' || e.keyCode === 9))
+    return;
+    var focusableElements = 'button, input, select, textarea, [tabindex]:not([tabindex="-1"])';
+    var modal = document.querySelector('#modal');
+    var firstFocusableElement = modal.querySelectorAll(focusableElements)[0];
+    var focusableContent = modal.querySelectorAll(focusableElements);
+    var lastFocusableElement = focusableContent[focusableContent.length - 1];
+
+    if (e.shiftKey) {
+        if (document.activeElement === firstFocusableElement) {
+            lastFocusableElement.focus();
+            e.preventDefault();
+        }
+        else {
+            if (document.activeElement === lastFocusableElement) {
+                firstFocusableElement.focus();
+                e.preventDefault();
+            }
+        };
+    }
+}
